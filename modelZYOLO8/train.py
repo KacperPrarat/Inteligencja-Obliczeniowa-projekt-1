@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
 
-model = YOLO('yolov8n-pose.pt')  # load a pretrained model (recommended for training)
+model = YOLO('yolov8n-pose.pt') 
 
 model.train(data='config.yaml', epochs=100, imgsz=640)
