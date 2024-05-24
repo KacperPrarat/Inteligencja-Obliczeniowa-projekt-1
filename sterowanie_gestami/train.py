@@ -57,7 +57,6 @@ def train_model(train_data, validation_data, batch_size, input_shape):
     model = create_model(input_shape)
     history = History()
     checkpoint = ModelCheckpoint('game-model.keras', monitor='val_accuracy', verbose=1, save_best_only=True, mode='max')
-    # early_stopping = EarlyStopping(monitor="val_loss", patience=50, restore_best_weights=True)
 
     history = model.fit(train_data, validation_data=validation_data, epochs=15, batch_size=batch_size, callbacks=[history, checkpoint ]) #,early_stopping])
     
@@ -87,7 +86,6 @@ def plot_diagnostics(history, cm):
     plt.ylabel('True')
     plt.title('Confusion Matrix')
     plt.savefig("confusion_matrix.png")
-    # plt.close()
 
     plt.figure(figsize=(10, 5))
     plt.subplot(1, 2, 1)
