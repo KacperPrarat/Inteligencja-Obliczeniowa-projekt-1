@@ -1,8 +1,6 @@
 import os
-# Specify paths
-# annotations_path = './first_490_anotations.txt'
+
 annotations_path = './last_210_anotations.txt'
-# output_directory = './data/labels/train'
 output_directory = './data/labels/val'
 
 # Open the annotations file

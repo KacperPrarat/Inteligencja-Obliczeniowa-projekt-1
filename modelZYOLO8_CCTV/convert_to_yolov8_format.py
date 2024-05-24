@@ -34,30 +34,6 @@ def convert_to_yolov8_format(annotations, images):
 
     return yolov8_annotations
 
-# def main():
-#     # Define input and output file paths
-#     json_file_path = 'annotations.json'
-#     output_file_path = 'annotations_yolo.txt'
-
-#     # Load JSON file
-#     with open(json_file_path, 'r') as f:
-#         data = json.load(f)
-
-#     # Extract annotations and images
-#     annotations = data['annotations']
-#     images = data['images']
-
-#     # Convert annotations to YOLOv8 format
-#     yolov8_annotations = convert_to_yolov8_format(annotations, images)
-
-#     # Save YOLOv8 annotations to text file
-#     with open(output_file_path, 'w') as f:
-#         f.write('\n'.join(yolov8_annotations))
-
-#     print(f"Annotations converted to YOLOv8 format and saved to {output_file_path}")
-
-# if __name__ == "__main__":
-#     main()
 
 
 def main():
